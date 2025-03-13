@@ -46,7 +46,7 @@ const char* htmlHomePage PROGMEM = R"HTMLHOMEPAGE(
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <style>
     body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     }
     .noselect {
       -webkit-touch-callout: none; /* iOS Safari */
@@ -57,7 +57,7 @@ const char* htmlHomePage PROGMEM = R"HTMLHOMEPAGE(
                 user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
     }
     .slider-handle {
-    background-color: purple;
+    background-color: rgb(117, 27, 117);
     }
     .slidecontainer{
       width: 100%;
@@ -67,7 +67,7 @@ const char* htmlHomePage PROGMEM = R"HTMLHOMEPAGE(
       width: 100%;
       height: 20px;
       border-radius: 5px;
-      background: #d3d3d3;
+      background: #8f8f8f;
       outline: none;
       opacity: 0.7;
       -webkit-transition: .2s;
@@ -82,7 +82,7 @@ const char* htmlHomePage PROGMEM = R"HTMLHOMEPAGE(
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      background: red;
+      background: rgb(174, 0, 255);
       cursor: pointer;
     }
 
@@ -90,14 +90,14 @@ const char* htmlHomePage PROGMEM = R"HTMLHOMEPAGE(
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      background: red;
+      background: rgb(105, 12, 255);
       cursor: pointer;
     }
 
     </style>
     </head>
   <body>
-  <body class="noselect" align="center" style="background-color:white">
+  <body class="noselect" align="center" style="background-color:rgb(0, 0, 0)">
      
     <!--h2 style="color: teal;text-align:center;">Wi-Fi Camera &#128663; Control</h2-->
     
