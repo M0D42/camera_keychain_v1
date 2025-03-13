@@ -67,7 +67,7 @@ const char* htmlHomePage PROGMEM = R"HTMLHOMEPAGE(
       width: 100%;
       height: 20px;
       border-radius: 5px;
-      background: #8f8f8f;
+      background: rgb(255, 255, 255);
       outline: none;
       opacity: 0.7;
       -webkit-transition: .2s;
