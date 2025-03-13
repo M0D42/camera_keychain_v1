@@ -37,8 +37,10 @@ const char* password = "12345678";
 AsyncWebServer server(80);
 AsyncWebSocket wsCamera("/Camera");
 AsyncWebSocket wsServoInput("/ServoInput");
-const char* htmlHomePage PROGREM = R"HTMLHOMEPAGE(
-!DOCTYPE html>
+
+
+const char* htmlHomePage PROGMEM = R"HTMLHOMEPAGE(
+<!DOCTYPE html>
 <html>
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -52,8 +54,7 @@ const char* htmlHomePage PROGREM = R"HTMLHOMEPAGE(
          -khtml-user-select: none; /* Konqueror HTML */
            -moz-user-select: none; /* Firefox */
             -ms-user-select: none; /* Internet Explorer/Edge */
-                user-select: none; /* Non-prefixed version, currently
-                                      supported by Chrome and Opera */
+                user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
     }
     .slider-handle {
     background-color: purple;
@@ -96,11 +97,11 @@ const char* htmlHomePage PROGREM = R"HTMLHOMEPAGE(
     </style>
     </head>
   <body>
-<body class="noselect" align="center" style="background-color:white">
+  <body class="noselect" align="center" style="background-color:white">
      
     <!--h2 style="color: teal;text-align:center;">Wi-Fi Camera &#128663; Control</h2-->
     
-    <table id="mainTable" style="width:400px;margin:auto;table-layout:fixed" CELLSPACING=10>
+    <table id="mainTable" style="width:400px;margin:auto;table-layout:fixed" cellspacing=10>
       <tr>
         <img id="cameraImage" src="" style="width:400px;height:250px"></td>
       </tr> 
@@ -176,7 +177,6 @@ const char* htmlHomePage PROGREM = R"HTMLHOMEPAGE(
   </body>    
 </html>
 )HTMLHOMEPAGE";
-
 void handleRoot(AsyncWebServerRequest *request) 
 {
   request->send_P(200, "text/html", htmlHomePage);
